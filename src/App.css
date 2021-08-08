@@ -10,14 +10,27 @@
 .products,
 .sign-up {
 	display: flex;
-	height: 90vh;
+	margin-top: 0;
+	margin-bottom: 0;
+	height: calc(100vh - 80px);
 	align-items: center;
 	justify-content: center;
 	font-size: 3rem;
 }
 
+@media only screen and (max-width: 565px) {
+	.home,
+	.services,
+	.products,
+	.sign-up {
+		word-break: break-word;
+		font-size: 2.75rem !important;
+	}
+}
+
 .services {
-	background-image: url('./images/img-2.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+		url('./images/img-2.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -26,7 +39,8 @@
 }
 
 .products {
-	background-image: url('./images/img-1.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+		url('./images/img-6.jpg');
 	background-position: center;
 	background-size: fill;
 	background-repeat: no-repeat;
@@ -35,7 +49,8 @@
 }
 
 .sign-up {
-	background-image: url('./images/img-8.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+		url('./images/img-8.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
